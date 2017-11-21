@@ -15,7 +15,7 @@ public:
 	Nodo * atender();
 	Nodo * ultimoElem();
 	void eliminarElem(void);
-	bool isEmpty(void);
+	bool isEmpty(void);//carlos
 	~Cola(void);
 
 protected:
