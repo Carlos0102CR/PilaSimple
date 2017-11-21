@@ -14,8 +14,8 @@ public:
 	void insertarElem(int pinfo);
 	Nodo * atender();
 	Nodo * ultimoElem();
-	void eliminarElem(void);//melegatti
-	bool isEmpty(void);//carlos
+	void eliminarElem(void);
+	bool isEmpty(void);
 	~Cola(void);
 
 protected:
