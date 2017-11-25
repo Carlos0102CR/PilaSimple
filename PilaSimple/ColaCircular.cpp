@@ -17,7 +17,7 @@ Nodo * ColaCircular::siguiente() {
 	setFinal(aux);
 	return aux;
 }
-//3 4 1 2
+
 Nodo * ColaCircular::anterior() {
 	Nodo* aux;
 	Nodo* act;
