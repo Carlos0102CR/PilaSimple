@@ -61,3 +61,5 @@ bool Cola::isEmpty() {
 Cola::~Cola() {
 	delete frente;
 }
+
+//test
