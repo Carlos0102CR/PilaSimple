@@ -5,12 +5,14 @@
 #include "Cola.h"
 #include "Nodo.h"
 #include "ColaPrioridad.h"
+#include "ListaDoblementeEnlazada.h"
 using namespace std;
 
 int probarColaC();
 int probarColaP();
 int iterarSColaC();
 int iterarAColaC();
+int probarListaDE();
 ColaCircular * prueba = new ColaCircular;
 
 int main()
@@ -18,6 +20,7 @@ int main()
 	int opcion = 0;
 	cout << "	1.Probar Cola Circular." << endl;
 	cout << "	2.Probar Cola Prioridad." << endl;
+	cout << "	3.Probar Lista Doblemente Enlazada." << endl;
 	cout << "Selecciones una opcion:" << endl;
 	cin >> opcion;
 	switch (opcion)
@@ -27,6 +30,9 @@ int main()
 		break;
 	case 2:
 		probarColaP();
+		break;
+	case 3:
+		probarListaDE();
 		break;
 	default:
 		break;
@@ -55,6 +61,22 @@ int probarColaP() {
 	{
 		cout << pruebaColaP->atender()->getInfo() << endl;
 	}
+	system("pause");
+	return 0;
+}
+int probarListaDE() {
+	ListaDoblementeEnlazada * pruebaListaDE = new ListaDoblementeEnlazada;
+	pruebaListaDE->addNodo(1);
+	pruebaListaDE->addNodo(2);
+	pruebaListaDE->addNodo(3);
+	pruebaListaDE->addNodo(4);
+	pruebaListaDE->addNodo(5);
+	pruebaListaDE->addNodo(6);
+	pruebaListaDE->addNodo(7);
+	pruebaListaDE->addNodo(8);
+	pruebaListaDE->addNodo(9);
+	pruebaListaDE->addNodo(0);
+	pruebaListaDE->mostrarListaDoblementeEnlazada();
 	system("pause");
 	return 0;
 }

@@ -151,7 +151,9 @@
     <ClInclude Include="ColaCicular.h" />
     <ClInclude Include="ColaPrioridad.h" />
     <ClInclude Include="Lista.h" />
+    <ClInclude Include="ListaDoblementeEnlazada.h" />
     <ClInclude Include="Nodo.h" />
+    <ClInclude Include="NodoDobleSent.h" />
     <ClInclude Include="NodoPriori.h" />
     <ClInclude Include="Pila.h" />
     <ClInclude Include="stdafx.h" />
@@ -163,7 +165,9 @@
     <ClCompile Include="ColaPrioridad.cpp" />
     <ClCompile Include="EjercicioIntercambioTADL.cpp" />
     <ClCompile Include="Lista.cpp" />
+    <ClCompile Include="ListaDoblementeEnlazada.cpp" />
     <ClCompile Include="Nodo.cpp" />
+    <ClCompile Include="NodoDobleSent.cpp" />
     <ClCompile Include="NodoPriori.cpp" />
     <ClCompile Include="Pila.cpp" />
     <ClCompile Include="stdafx.cpp">

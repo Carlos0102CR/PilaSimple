@@ -9,7 +9,7 @@ public:
 	void setSig(Nodo * x);
 	Nodo* getSig(void);
 	~Nodo(void);
-private:
+protected:
 	int info;
 	Nodo * sig;
 };
