@@ -13,18 +13,22 @@ void ColaPrioridad::insertarElem(int pinfo, int pprioridad) {
 	NodoPriori * act;
 	aux = new NodoPriori(pinfo,pprioridad);
 	act = getFrente();
-	if (act->getPrioridad<aux->getPrioridad) {
-		aux->setSig(act);
-		setFrente(aux);
-	}else {
-		while(act->getSig()->getPrioridad()>aux->getPrioridad()|| act->getSig()->getPrioridad()==aux->getPrioridad()){
-			act = act->getSig();
+	if (getFrente() != NULL) {
+		if (act->getPrioridad() < aux->getPrioridad()) {
+			aux->setSig(act);
+			setFrente(aux);
 		}
-		if (act->getSig() != NULL) {
-			aux->setSig(act->getSig);
+		else {
+			while (act->getSig()->getPrioridad() > aux->getPrioridad() || act->getSig()->getPrioridad() == aux->getPrioridad()) {
+				act = act->getSig();
+			}
+			if (act->getSig() != NULL) {
+				aux->setSig(act->getSig());
+			}
+			act->setSig(aux);
 		}
-		act->setSig(aux);
 	}
+	setFrente(aux);
 }
 int ColaPrioridad::getLongitud() {
 	return longitud;

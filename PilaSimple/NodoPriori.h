@@ -13,7 +13,6 @@ public:
 	int getInfo(void);
 	void setSig(NodoPriori * x);
 	NodoPriori* getSig(void);
-	~NodoPriori(void);
 private:
 	int info;
 	NodoPriori * sig;

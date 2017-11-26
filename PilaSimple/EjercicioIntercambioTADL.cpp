@@ -4,9 +4,11 @@
 #include "ColaCicular.h"
 #include "Cola.h"
 #include "Nodo.h"
+#include "ColaPrioridad.h"
 using namespace std;
 
 int probarColaC();
+int probarColaP();
 int iterarSColaC();
 int iterarAColaC();
 ColaCircular * prueba = new ColaCircular;
@@ -15,6 +17,7 @@ int main()
 {
 	int opcion = 0;
 	cout << "	1.Probar Cola Circular." << endl;
+	cout << "	2.Probar Cola Prioridad." << endl;
 	cout << "Selecciones una opcion:" << endl;
 	cin >> opcion;
 	switch (opcion)
@@ -22,10 +25,38 @@ int main()
 	case 1:
 		probarColaC();
 		break;
+	case 2:
+		probarColaP();
+		break;
 	default:
 		break;
 	}
     return 0;
+}
+
+int probarColaP() {
+	ColaPrioridad * pruebaColaP = new ColaPrioridad;
+	pruebaColaP->insertarElem(1,1);
+	pruebaColaP->insertarElem(2,2);
+	pruebaColaP->insertarElem(3,3);
+	pruebaColaP->insertarElem(4,4);
+	pruebaColaP->insertarElem(5,5);
+	cout << "--------------" << endl;
+	cout << "Se insertaron: " << endl;
+	cout << "	Numero	|Prioridad" << endl;
+	cout << "	1	|	1" << endl;
+	cout << "	2	|	2" << endl;
+	cout << "	3	|	3" << endl;
+	cout << "	4	|	4" << endl;
+	cout << "	5	|	5" << endl;
+	cout << "--------------" << endl;
+	cout << "Y se Imprime" << endl;
+	while (pruebaColaP->isEmpty()==false)
+	{
+		cout << pruebaColaP->atender()->getInfo() << endl;
+	}
+	system("pause");
+	return 0;
 }
 
 int probarColaC() {
