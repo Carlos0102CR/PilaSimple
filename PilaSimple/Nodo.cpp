@@ -29,7 +29,7 @@ Nodo* Nodo::getSig(void) {
 }
 
 Nodo::~Nodo() {
-	info = 0;
+	this->info = 0;
 	if (getSig() != NULL) {
 		delete sig;
 	}

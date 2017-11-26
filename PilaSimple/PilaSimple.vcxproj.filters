@@ -39,6 +39,12 @@
     <ClInclude Include="ColaCicular.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NodoPriori.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColaPrioridad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -60,6 +66,12 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="ColaCircular.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodoPriori.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColaPrioridad.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

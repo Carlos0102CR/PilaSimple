@@ -149,8 +149,10 @@
   <ItemGroup>
     <ClInclude Include="Cola.h" />
     <ClInclude Include="ColaCicular.h" />
+    <ClInclude Include="ColaPrioridad.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="Nodo.h" />
+    <ClInclude Include="NodoPriori.h" />
     <ClInclude Include="Pila.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -158,9 +160,11 @@
   <ItemGroup>
     <ClCompile Include="Cola.cpp" />
     <ClCompile Include="ColaCircular.cpp" />
+    <ClCompile Include="ColaPrioridad.cpp" />
     <ClCompile Include="EjercicioIntercambioTADL.cpp" />
     <ClCompile Include="Lista.cpp" />
     <ClCompile Include="Nodo.cpp" />
+    <ClCompile Include="NodoPriori.cpp" />
     <ClCompile Include="Pila.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
