@@ -1,5 +1,4 @@
 #include "stdafx.h"
-#include <iostream>
 #include "ColaPrioridad.h"
 #include "NodoPriori.h"
 using namespace std;

@@ -80,10 +80,10 @@
     <ClCompile Include="ColaPrioridad.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="NodoDobleSent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ListaDoblementeEnlazada.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodoDobleSent.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

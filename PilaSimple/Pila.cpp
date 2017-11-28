@@ -1,7 +1,7 @@
 #include "stdafx.h"
-#include <iostream>
 #include "Pila.h"
 #include "Nodo.h" 
+#include <iostream>
 using namespace std;
 Pila::Pila() {
 	this->tope = NULL;
